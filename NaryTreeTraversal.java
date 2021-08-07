@@ -1,4 +1,5 @@
-/*
+/* 
+/@author Karthik Kolathumani
 // Definition for a Node.
 class Node {
     public int val;
