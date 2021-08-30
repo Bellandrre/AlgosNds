@@ -45,6 +45,7 @@ public class LinkedList {
             while(n.next != null){
                 if(n.next.val == d){
                     n.next = n.next.next;
+                    n.next.next.prev = n; // re pointing pointer back to deleted node's prev
                     return head;
                 }
                 n = n.next;
