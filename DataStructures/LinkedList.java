@@ -1,5 +1,13 @@
 package DataStructures;
 
+/**
+ * @author Karthik Kolathumani
+ * This class can be used to build a simple primitive integer type linked list assuming the data is unique.
+ * TODO:
+ * 1) Make the list generic and allow duplicates
+ * 2) Search in generic List and output next and prev pointers.
+ * 3) Delete based on references.
+ * */
 public class LinkedList {
 
     private Node node;
@@ -44,8 +52,8 @@ public class LinkedList {
 
             while(n.next != null){
                 if(n.next.val == d){
+                    n.next.next.prev = n;
                     n.next = n.next.next;
-                    n.next.next.prev = n; // re pointing pointer back to deleted node's prev
                     return head;
                 }
                 n = n.next;
@@ -58,6 +66,30 @@ public class LinkedList {
             while(head != null){
                 System.out.print(head.val +" "+ "->");
                 head = head.next;
+            }
+        }
+
+        private void getPrevNode(int data){
+            Node head = this;
+
+            int prevVal = -1;
+
+            if(head.val == data){
+                System.out.println("This is the head node so there is no prev node!");
+                return;
+            }
+
+            while(head  != null){
+                if(head.val == data){
+                    prevVal =  head.prev.val;
+                    break;
+                }
+                head = head.next;
+            }
+            if(prevVal != -1) {
+                System.out.println("Previous node for " + data + " is " + prevVal);
+            }else{
+                System.out.println("There is no node with value "+data);
             }
         }
     }
@@ -76,6 +108,10 @@ public class LinkedList {
     public void printList(){
          this.node.printList();
          System.out.println();
+    }
+
+    public void getPrevNode(int data){
+        this.node.getPrevNode(data);
     }
 
 }
