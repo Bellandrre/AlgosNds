@@ -37,6 +37,48 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/kkolathu/Documents/GitHub/AlgosNds/C++\ Practice/Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="Structures">
+				<Option output="/Users/kkolathu/Documents/GitHub/AlgosNds/C++ Practice/Programming/cmake-build-debug/Structures" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/kkolathu/Documents/GitHub/AlgosNds/C++ Practice/Programming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/kkolathu/Documents/GitHub/AlgosNds/C++\ Practice/Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 Structures"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/kkolathu/Documents/GitHub/AlgosNds/C++\ Practice/Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/kkolathu/Documents/GitHub/AlgosNds/C++\ Practice/Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/kkolathu/Documents/GitHub/AlgosNds/C++\ Practice/Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Structures/fast">
+				<Option output="/Users/kkolathu/Documents/GitHub/AlgosNds/C++ Practice/Programming/cmake-build-debug/Structures" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/kkolathu/Documents/GitHub/AlgosNds/C++ Practice/Programming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/kkolathu/Documents/GitHub/AlgosNds/C++\ Practice/Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 Structures/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/kkolathu/Documents/GitHub/AlgosNds/C++\ Practice/Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/kkolathu/Documents/GitHub/AlgosNds/C++\ Practice/Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/kkolathu/Documents/GitHub/AlgosNds/C++\ Practice/Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="test">
 				<Option output="/Users/kkolathu/Documents/GitHub/AlgosNds/C++ Practice/Programming/cmake-build-debug/test" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/kkolathu/Documents/GitHub/AlgosNds/C++ Practice/Programming/cmake-build-debug"/>
@@ -164,6 +206,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/kkolathu/Documents/GitHub/AlgosNds/C++ Practice/Programming/DataStructures/Structures.cpp">
+			<Option target="Structures"/>
+		</Unit>
 		<Unit filename="/Users/kkolathu/Documents/GitHub/AlgosNds/C++ Practice/Programming/DataStructures/arrays.cpp">
 			<Option target="DataStructures"/>
 		</Unit>

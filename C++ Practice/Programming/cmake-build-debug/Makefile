@@ -117,6 +117,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named Structures
+
+# Build rule for target.
+Structures: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Structures
+.PHONY : Structures
+
+# fast build rule for target.
+Structures/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Structures.dir/build.make CMakeFiles/Structures.dir/build
+.PHONY : Structures/fast
+
+#=============================================================================
 # Target rules for targets named test
 
 # Build rule for target.
@@ -154,6 +167,30 @@ Programming: cmake_check_build_system
 Programming/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Programming.dir/build.make CMakeFiles/Programming.dir/build
 .PHONY : Programming/fast
+
+DataStructures/Structures.o: DataStructures/Structures.cpp.o
+.PHONY : DataStructures/Structures.o
+
+# target to build an object file
+DataStructures/Structures.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Structures.dir/build.make CMakeFiles/Structures.dir/DataStructures/Structures.cpp.o
+.PHONY : DataStructures/Structures.cpp.o
+
+DataStructures/Structures.i: DataStructures/Structures.cpp.i
+.PHONY : DataStructures/Structures.i
+
+# target to preprocess a source file
+DataStructures/Structures.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Structures.dir/build.make CMakeFiles/Structures.dir/DataStructures/Structures.cpp.i
+.PHONY : DataStructures/Structures.cpp.i
+
+DataStructures/Structures.s: DataStructures/Structures.cpp.s
+.PHONY : DataStructures/Structures.s
+
+# target to generate assembly for a file
+DataStructures/Structures.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Structures.dir/build.make CMakeFiles/Structures.dir/DataStructures/Structures.cpp.s
+.PHONY : DataStructures/Structures.cpp.s
 
 DataStructures/arrays.o: DataStructures/arrays.cpp.o
 .PHONY : DataStructures/arrays.o
@@ -237,7 +274,11 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... DataStructures"
 	@echo "... Programming"
+	@echo "... Structures"
 	@echo "... test"
+	@echo "... DataStructures/Structures.o"
+	@echo "... DataStructures/Structures.i"
+	@echo "... DataStructures/Structures.s"
 	@echo "... DataStructures/arrays.o"
 	@echo "... DataStructures/arrays.i"
 	@echo "... DataStructures/arrays.s"
