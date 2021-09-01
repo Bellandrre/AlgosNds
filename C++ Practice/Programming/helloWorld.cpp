@@ -1,10 +1,10 @@
-//
+/*
 // Created by Karthik Kolathumani on 8/31/21.
-//
+*/
 #include <iostream>
-
+using namespace std;
 int main() {
-    std::cout << "Karthik" << std::endl;
+    cout << "Karthik" << endl;
     return 0;
 }
 

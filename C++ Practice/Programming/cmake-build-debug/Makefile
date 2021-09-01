@@ -117,6 +117,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named arrays
+
+# Build rule for target.
+arrays: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 arrays
+.PHONY : arrays
+
+# fast build rule for target.
+arrays/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arrays.dir/build.make CMakeFiles/arrays.dir/build
+.PHONY : arrays/fast
+
+#=============================================================================
 # Target rules for targets named test
 
 # Build rule for target.
@@ -141,6 +154,30 @@ Programming: cmake_check_build_system
 Programming/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Programming.dir/build.make CMakeFiles/Programming.dir/build
 .PHONY : Programming/fast
+
+Arrays/arrays.o: Arrays/arrays.cpp.o
+.PHONY : Arrays/arrays.o
+
+# target to build an object file
+Arrays/arrays.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arrays.dir/build.make CMakeFiles/arrays.dir/Arrays/arrays.cpp.o
+.PHONY : Arrays/arrays.cpp.o
+
+Arrays/arrays.i: Arrays/arrays.cpp.i
+.PHONY : Arrays/arrays.i
+
+# target to preprocess a source file
+Arrays/arrays.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arrays.dir/build.make CMakeFiles/arrays.dir/Arrays/arrays.cpp.i
+.PHONY : Arrays/arrays.cpp.i
+
+Arrays/arrays.s: Arrays/arrays.cpp.s
+.PHONY : Arrays/arrays.s
+
+# target to generate assembly for a file
+Arrays/arrays.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arrays.dir/build.make CMakeFiles/arrays.dir/Arrays/arrays.cpp.s
+.PHONY : Arrays/arrays.cpp.s
 
 helloWorld.o: helloWorld.cpp.o
 .PHONY : helloWorld.o
@@ -199,7 +236,11 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Programming"
+	@echo "... arrays"
 	@echo "... test"
+	@echo "... Arrays/arrays.o"
+	@echo "... Arrays/arrays.i"
+	@echo "... Arrays/arrays.s"
 	@echo "... helloWorld.o"
 	@echo "... helloWorld.i"
 	@echo "... helloWorld.s"
