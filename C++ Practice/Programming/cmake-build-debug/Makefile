@@ -169,6 +169,19 @@ DataStructures/fast:
 .PHONY : DataStructures/fast
 
 #=============================================================================
+# Target rules for targets named kSum
+
+# Build rule for target.
+kSum: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kSum
+.PHONY : kSum
+
+# fast build rule for target.
+kSum/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kSum.dir/build.make CMakeFiles/kSum.dir/build
+.PHONY : kSum/fast
+
+#=============================================================================
 # Target rules for targets named Programming
 
 # Build rule for target.
@@ -253,6 +266,30 @@ ProgrammingProblems/ThreeSum.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThreeSum.dir/build.make CMakeFiles/ThreeSum.dir/ProgrammingProblems/ThreeSum.cpp.s
 .PHONY : ProgrammingProblems/ThreeSum.cpp.s
 
+ProgrammingProblems/kSum.o: ProgrammingProblems/kSum.cpp.o
+.PHONY : ProgrammingProblems/kSum.o
+
+# target to build an object file
+ProgrammingProblems/kSum.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kSum.dir/build.make CMakeFiles/kSum.dir/ProgrammingProblems/kSum.cpp.o
+.PHONY : ProgrammingProblems/kSum.cpp.o
+
+ProgrammingProblems/kSum.i: ProgrammingProblems/kSum.cpp.i
+.PHONY : ProgrammingProblems/kSum.i
+
+# target to preprocess a source file
+ProgrammingProblems/kSum.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kSum.dir/build.make CMakeFiles/kSum.dir/ProgrammingProblems/kSum.cpp.i
+.PHONY : ProgrammingProblems/kSum.cpp.i
+
+ProgrammingProblems/kSum.s: ProgrammingProblems/kSum.cpp.s
+.PHONY : ProgrammingProblems/kSum.s
+
+# target to generate assembly for a file
+ProgrammingProblems/kSum.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kSum.dir/build.make CMakeFiles/kSum.dir/ProgrammingProblems/kSum.cpp.s
+.PHONY : ProgrammingProblems/kSum.cpp.s
+
 helloWorld.o: helloWorld.cpp.o
 .PHONY : helloWorld.o
 
@@ -313,6 +350,7 @@ help:
 	@echo "... Programming"
 	@echo "... Structures"
 	@echo "... ThreeSum"
+	@echo "... kSum"
 	@echo "... test"
 	@echo "... DataStructures/Structures.o"
 	@echo "... DataStructures/Structures.i"
@@ -323,6 +361,9 @@ help:
 	@echo "... ProgrammingProblems/ThreeSum.o"
 	@echo "... ProgrammingProblems/ThreeSum.i"
 	@echo "... ProgrammingProblems/ThreeSum.s"
+	@echo "... ProgrammingProblems/kSum.o"
+	@echo "... ProgrammingProblems/kSum.i"
+	@echo "... ProgrammingProblems/kSum.s"
 	@echo "... helloWorld.o"
 	@echo "... helloWorld.i"
 	@echo "... helloWorld.s"

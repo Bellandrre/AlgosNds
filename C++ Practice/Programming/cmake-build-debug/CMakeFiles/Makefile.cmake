@@ -54,5 +54,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/test.dir/DependInfo.cmake"
   "CMakeFiles/ThreeSum.dir/DependInfo.cmake"
   "CMakeFiles/DataStructures.dir/DependInfo.cmake"
+  "CMakeFiles/kSum.dir/DependInfo.cmake"
   "CMakeFiles/Programming.dir/DependInfo.cmake"
   )
