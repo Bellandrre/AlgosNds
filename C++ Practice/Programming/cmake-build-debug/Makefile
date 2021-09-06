@@ -143,6 +143,19 @@ test/fast:
 .PHONY : test/fast
 
 #=============================================================================
+# Target rules for targets named ThreeSum
+
+# Build rule for target.
+ThreeSum: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ThreeSum
+.PHONY : ThreeSum
+
+# fast build rule for target.
+ThreeSum/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThreeSum.dir/build.make CMakeFiles/ThreeSum.dir/build
+.PHONY : ThreeSum/fast
+
+#=============================================================================
 # Target rules for targets named DataStructures
 
 # Build rule for target.
@@ -216,6 +229,30 @@ DataStructures/arrays.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataStructures.dir/build.make CMakeFiles/DataStructures.dir/DataStructures/arrays.cpp.s
 .PHONY : DataStructures/arrays.cpp.s
 
+ProgrammingProblems/ThreeSum.o: ProgrammingProblems/ThreeSum.cpp.o
+.PHONY : ProgrammingProblems/ThreeSum.o
+
+# target to build an object file
+ProgrammingProblems/ThreeSum.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThreeSum.dir/build.make CMakeFiles/ThreeSum.dir/ProgrammingProblems/ThreeSum.cpp.o
+.PHONY : ProgrammingProblems/ThreeSum.cpp.o
+
+ProgrammingProblems/ThreeSum.i: ProgrammingProblems/ThreeSum.cpp.i
+.PHONY : ProgrammingProblems/ThreeSum.i
+
+# target to preprocess a source file
+ProgrammingProblems/ThreeSum.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThreeSum.dir/build.make CMakeFiles/ThreeSum.dir/ProgrammingProblems/ThreeSum.cpp.i
+.PHONY : ProgrammingProblems/ThreeSum.cpp.i
+
+ProgrammingProblems/ThreeSum.s: ProgrammingProblems/ThreeSum.cpp.s
+.PHONY : ProgrammingProblems/ThreeSum.s
+
+# target to generate assembly for a file
+ProgrammingProblems/ThreeSum.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThreeSum.dir/build.make CMakeFiles/ThreeSum.dir/ProgrammingProblems/ThreeSum.cpp.s
+.PHONY : ProgrammingProblems/ThreeSum.cpp.s
+
 helloWorld.o: helloWorld.cpp.o
 .PHONY : helloWorld.o
 
@@ -275,6 +312,7 @@ help:
 	@echo "... DataStructures"
 	@echo "... Programming"
 	@echo "... Structures"
+	@echo "... ThreeSum"
 	@echo "... test"
 	@echo "... DataStructures/Structures.o"
 	@echo "... DataStructures/Structures.i"
@@ -282,6 +320,9 @@ help:
 	@echo "... DataStructures/arrays.o"
 	@echo "... DataStructures/arrays.i"
 	@echo "... DataStructures/arrays.s"
+	@echo "... ProgrammingProblems/ThreeSum.o"
+	@echo "... ProgrammingProblems/ThreeSum.i"
+	@echo "... ProgrammingProblems/ThreeSum.s"
 	@echo "... helloWorld.o"
 	@echo "... helloWorld.i"
 	@echo "... helloWorld.s"
