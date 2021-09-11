@@ -117,6 +117,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named FourSum
+
+# Build rule for target.
+FourSum: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FourSum
+.PHONY : FourSum
+
+# fast build rule for target.
+FourSum/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourSum.dir/build.make CMakeFiles/FourSum.dir/build
+.PHONY : FourSum/fast
+
+#=============================================================================
 # Target rules for targets named ThreeSumClosest
 
 # Build rule for target.
@@ -255,6 +268,30 @@ DataStructures/arrays.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataStructures.dir/build.make CMakeFiles/DataStructures.dir/DataStructures/arrays.cpp.s
 .PHONY : DataStructures/arrays.cpp.s
 
+ProgrammingProblems/FourSum.o: ProgrammingProblems/FourSum.cpp.o
+.PHONY : ProgrammingProblems/FourSum.o
+
+# target to build an object file
+ProgrammingProblems/FourSum.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourSum.dir/build.make CMakeFiles/FourSum.dir/ProgrammingProblems/FourSum.cpp.o
+.PHONY : ProgrammingProblems/FourSum.cpp.o
+
+ProgrammingProblems/FourSum.i: ProgrammingProblems/FourSum.cpp.i
+.PHONY : ProgrammingProblems/FourSum.i
+
+# target to preprocess a source file
+ProgrammingProblems/FourSum.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourSum.dir/build.make CMakeFiles/FourSum.dir/ProgrammingProblems/FourSum.cpp.i
+.PHONY : ProgrammingProblems/FourSum.cpp.i
+
+ProgrammingProblems/FourSum.s: ProgrammingProblems/FourSum.cpp.s
+.PHONY : ProgrammingProblems/FourSum.s
+
+# target to generate assembly for a file
+ProgrammingProblems/FourSum.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourSum.dir/build.make CMakeFiles/FourSum.dir/ProgrammingProblems/FourSum.cpp.s
+.PHONY : ProgrammingProblems/FourSum.cpp.s
+
 ProgrammingProblems/ThreeSum.o: ProgrammingProblems/ThreeSum.cpp.o
 .PHONY : ProgrammingProblems/ThreeSum.o
 
@@ -384,6 +421,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... DataStructures"
+	@echo "... FourSum"
 	@echo "... Programming"
 	@echo "... Structures"
 	@echo "... ThreeSum"
@@ -396,6 +434,9 @@ help:
 	@echo "... DataStructures/arrays.o"
 	@echo "... DataStructures/arrays.i"
 	@echo "... DataStructures/arrays.s"
+	@echo "... ProgrammingProblems/FourSum.o"
+	@echo "... ProgrammingProblems/FourSum.i"
+	@echo "... ProgrammingProblems/FourSum.s"
 	@echo "... ProgrammingProblems/ThreeSum.o"
 	@echo "... ProgrammingProblems/ThreeSum.i"
 	@echo "... ProgrammingProblems/ThreeSum.s"
