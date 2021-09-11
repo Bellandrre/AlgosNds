@@ -117,6 +117,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named ThreeSumClosest
+
+# Build rule for target.
+ThreeSumClosest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ThreeSumClosest
+.PHONY : ThreeSumClosest
+
+# fast build rule for target.
+ThreeSumClosest/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThreeSumClosest.dir/build.make CMakeFiles/ThreeSumClosest.dir/build
+.PHONY : ThreeSumClosest/fast
+
+#=============================================================================
 # Target rules for targets named Structures
 
 # Build rule for target.
@@ -266,6 +279,30 @@ ProgrammingProblems/ThreeSum.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThreeSum.dir/build.make CMakeFiles/ThreeSum.dir/ProgrammingProblems/ThreeSum.cpp.s
 .PHONY : ProgrammingProblems/ThreeSum.cpp.s
 
+ProgrammingProblems/ThreeSumClosest.o: ProgrammingProblems/ThreeSumClosest.cpp.o
+.PHONY : ProgrammingProblems/ThreeSumClosest.o
+
+# target to build an object file
+ProgrammingProblems/ThreeSumClosest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThreeSumClosest.dir/build.make CMakeFiles/ThreeSumClosest.dir/ProgrammingProblems/ThreeSumClosest.cpp.o
+.PHONY : ProgrammingProblems/ThreeSumClosest.cpp.o
+
+ProgrammingProblems/ThreeSumClosest.i: ProgrammingProblems/ThreeSumClosest.cpp.i
+.PHONY : ProgrammingProblems/ThreeSumClosest.i
+
+# target to preprocess a source file
+ProgrammingProblems/ThreeSumClosest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThreeSumClosest.dir/build.make CMakeFiles/ThreeSumClosest.dir/ProgrammingProblems/ThreeSumClosest.cpp.i
+.PHONY : ProgrammingProblems/ThreeSumClosest.cpp.i
+
+ProgrammingProblems/ThreeSumClosest.s: ProgrammingProblems/ThreeSumClosest.cpp.s
+.PHONY : ProgrammingProblems/ThreeSumClosest.s
+
+# target to generate assembly for a file
+ProgrammingProblems/ThreeSumClosest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThreeSumClosest.dir/build.make CMakeFiles/ThreeSumClosest.dir/ProgrammingProblems/ThreeSumClosest.cpp.s
+.PHONY : ProgrammingProblems/ThreeSumClosest.cpp.s
+
 ProgrammingProblems/kSum.o: ProgrammingProblems/kSum.cpp.o
 .PHONY : ProgrammingProblems/kSum.o
 
@@ -350,6 +387,7 @@ help:
 	@echo "... Programming"
 	@echo "... Structures"
 	@echo "... ThreeSum"
+	@echo "... ThreeSumClosest"
 	@echo "... kSum"
 	@echo "... test"
 	@echo "... DataStructures/Structures.o"
@@ -361,6 +399,9 @@ help:
 	@echo "... ProgrammingProblems/ThreeSum.o"
 	@echo "... ProgrammingProblems/ThreeSum.i"
 	@echo "... ProgrammingProblems/ThreeSum.s"
+	@echo "... ProgrammingProblems/ThreeSumClosest.o"
+	@echo "... ProgrammingProblems/ThreeSumClosest.i"
+	@echo "... ProgrammingProblems/ThreeSumClosest.s"
 	@echo "... ProgrammingProblems/kSum.o"
 	@echo "... ProgrammingProblems/kSum.i"
 	@echo "... ProgrammingProblems/kSum.s"
