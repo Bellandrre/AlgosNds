@@ -6,6 +6,7 @@
 #include<iostream>
 #include<vector>
 using namespace std;
+    //Closest Three sum is similar to three sum just maintain a mindiff until now variable to make threesum to threesumclosest
     int threeSumClosest(vector<int> &nums, int target){
         vector<vector<int>> resultSet;
         int minClosest = INT_MAX;
