@@ -1,7 +1,8 @@
-//
-// Created by Karthik Kolathumani on 9/10/21.
-//Changes
-//
+/**
+ * Given an integer array nums of length n and an integer target, find three integers in nums such that the sum is closest to target.
+ * Return the sum of the three integers.
+ * You may assume that each input would have exactly one solution.
+ */
 #include<iostream>
 #include<vector>
 using namespace std;
