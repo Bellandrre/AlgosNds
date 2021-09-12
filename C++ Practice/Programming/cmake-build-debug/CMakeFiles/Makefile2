@@ -64,6 +64,7 @@ CMAKE_BINARY_DIR = "/Users/kkolathu/Documents/GitHub/AlgosNds/C++ Practice/Progr
 
 # The main recursive "all" target.
 all: CMakeFiles/FourSum.dir/all
+all: CMakeFiles/HelloWorld.dir/all
 all: CMakeFiles/ThreeSumClosest.dir/all
 all: CMakeFiles/Structures.dir/all
 all: CMakeFiles/test.dir/all
@@ -79,6 +80,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/FourSum.dir/clean
+clean: CMakeFiles/HelloWorld.dir/clean
 clean: CMakeFiles/ThreeSumClosest.dir/clean
 clean: CMakeFiles/Structures.dir/clean
 clean: CMakeFiles/test.dir/clean
@@ -115,13 +117,39 @@ CMakeFiles/FourSum.dir/clean:
 .PHONY : CMakeFiles/FourSum.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/HelloWorld.dir
+
+# All Build rule for target.
+CMakeFiles/HelloWorld.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/kkolathu/Documents/GitHub/AlgosNds/C++ Practice/Programming/cmake-build-debug/CMakeFiles" --progress-num=5,6 "Built target HelloWorld"
+.PHONY : CMakeFiles/HelloWorld.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/HelloWorld.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/kkolathu/Documents/GitHub/AlgosNds/C++ Practice/Programming/cmake-build-debug/CMakeFiles" 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/HelloWorld.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/kkolathu/Documents/GitHub/AlgosNds/C++ Practice/Programming/cmake-build-debug/CMakeFiles" 0
+.PHONY : CMakeFiles/HelloWorld.dir/rule
+
+# Convenience name for target.
+HelloWorld: CMakeFiles/HelloWorld.dir/rule
+.PHONY : HelloWorld
+
+# clean rule for target.
+CMakeFiles/HelloWorld.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/clean
+.PHONY : CMakeFiles/HelloWorld.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/ThreeSumClosest.dir
 
 # All Build rule for target.
 CMakeFiles/ThreeSumClosest.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThreeSumClosest.dir/build.make CMakeFiles/ThreeSumClosest.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThreeSumClosest.dir/build.make CMakeFiles/ThreeSumClosest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/kkolathu/Documents/GitHub/AlgosNds/C++ Practice/Programming/cmake-build-debug/CMakeFiles" --progress-num=11,12 "Built target ThreeSumClosest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/kkolathu/Documents/GitHub/AlgosNds/C++ Practice/Programming/cmake-build-debug/CMakeFiles" --progress-num=13,14 "Built target ThreeSumClosest"
 .PHONY : CMakeFiles/ThreeSumClosest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -147,7 +175,7 @@ CMakeFiles/ThreeSumClosest.dir/clean:
 CMakeFiles/Structures.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Structures.dir/build.make CMakeFiles/Structures.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Structures.dir/build.make CMakeFiles/Structures.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/kkolathu/Documents/GitHub/AlgosNds/C++ Practice/Programming/cmake-build-debug/CMakeFiles" --progress-num=7,8 "Built target Structures"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/kkolathu/Documents/GitHub/AlgosNds/C++ Practice/Programming/cmake-build-debug/CMakeFiles" --progress-num=9,10 "Built target Structures"
 .PHONY : CMakeFiles/Structures.dir/all
 
 # Build rule for subdir invocation for target.
@@ -173,7 +201,7 @@ CMakeFiles/Structures.dir/clean:
 CMakeFiles/test.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/kkolathu/Documents/GitHub/AlgosNds/C++ Practice/Programming/cmake-build-debug/CMakeFiles" --progress-num=15,16 "Built target test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/kkolathu/Documents/GitHub/AlgosNds/C++ Practice/Programming/cmake-build-debug/CMakeFiles" --progress-num=17,18 "Built target test"
 .PHONY : CMakeFiles/test.dir/all
 
 # Build rule for subdir invocation for target.
@@ -199,7 +227,7 @@ CMakeFiles/test.dir/clean:
 CMakeFiles/ThreeSum.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThreeSum.dir/build.make CMakeFiles/ThreeSum.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThreeSum.dir/build.make CMakeFiles/ThreeSum.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/kkolathu/Documents/GitHub/AlgosNds/C++ Practice/Programming/cmake-build-debug/CMakeFiles" --progress-num=9,10 "Built target ThreeSum"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/kkolathu/Documents/GitHub/AlgosNds/C++ Practice/Programming/cmake-build-debug/CMakeFiles" --progress-num=11,12 "Built target ThreeSum"
 .PHONY : CMakeFiles/ThreeSum.dir/all
 
 # Build rule for subdir invocation for target.
@@ -251,7 +279,7 @@ CMakeFiles/DataStructures.dir/clean:
 CMakeFiles/kSum.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kSum.dir/build.make CMakeFiles/kSum.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kSum.dir/build.make CMakeFiles/kSum.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/kkolathu/Documents/GitHub/AlgosNds/C++ Practice/Programming/cmake-build-debug/CMakeFiles" --progress-num=13,14 "Built target kSum"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/kkolathu/Documents/GitHub/AlgosNds/C++ Practice/Programming/cmake-build-debug/CMakeFiles" --progress-num=15,16 "Built target kSum"
 .PHONY : CMakeFiles/kSum.dir/all
 
 # Build rule for subdir invocation for target.
@@ -277,7 +305,7 @@ CMakeFiles/kSum.dir/clean:
 CMakeFiles/Programming.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Programming.dir/build.make CMakeFiles/Programming.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Programming.dir/build.make CMakeFiles/Programming.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/kkolathu/Documents/GitHub/AlgosNds/C++ Practice/Programming/cmake-build-debug/CMakeFiles" --progress-num=5,6 "Built target Programming"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/kkolathu/Documents/GitHub/AlgosNds/C++ Practice/Programming/cmake-build-debug/CMakeFiles" --progress-num=7,8 "Built target Programming"
 .PHONY : CMakeFiles/Programming.dir/all
 
 # Build rule for subdir invocation for target.

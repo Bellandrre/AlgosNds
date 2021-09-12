@@ -130,6 +130,19 @@ FourSum/fast:
 .PHONY : FourSum/fast
 
 #=============================================================================
+# Target rules for targets named HelloWorld
+
+# Build rule for target.
+HelloWorld: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 HelloWorld
+.PHONY : HelloWorld
+
+# fast build rule for target.
+HelloWorld/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/build
+.PHONY : HelloWorld/fast
+
+#=============================================================================
 # Target rules for targets named ThreeSumClosest
 
 # Build rule for target.
@@ -364,6 +377,30 @@ ProgrammingProblems/kSum.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kSum.dir/build.make CMakeFiles/kSum.dir/ProgrammingProblems/kSum.cpp.s
 .PHONY : ProgrammingProblems/kSum.cpp.s
 
+Threads/HelloWorld.o: Threads/HelloWorld.cpp.o
+.PHONY : Threads/HelloWorld.o
+
+# target to build an object file
+Threads/HelloWorld.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/Threads/HelloWorld.cpp.o
+.PHONY : Threads/HelloWorld.cpp.o
+
+Threads/HelloWorld.i: Threads/HelloWorld.cpp.i
+.PHONY : Threads/HelloWorld.i
+
+# target to preprocess a source file
+Threads/HelloWorld.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/Threads/HelloWorld.cpp.i
+.PHONY : Threads/HelloWorld.cpp.i
+
+Threads/HelloWorld.s: Threads/HelloWorld.cpp.s
+.PHONY : Threads/HelloWorld.s
+
+# target to generate assembly for a file
+Threads/HelloWorld.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/Threads/HelloWorld.cpp.s
+.PHONY : Threads/HelloWorld.cpp.s
+
 helloWorld.o: helloWorld.cpp.o
 .PHONY : helloWorld.o
 
@@ -422,6 +459,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... DataStructures"
 	@echo "... FourSum"
+	@echo "... HelloWorld"
 	@echo "... Programming"
 	@echo "... Structures"
 	@echo "... ThreeSum"
@@ -446,6 +484,9 @@ help:
 	@echo "... ProgrammingProblems/kSum.o"
 	@echo "... ProgrammingProblems/kSum.i"
 	@echo "... ProgrammingProblems/kSum.s"
+	@echo "... Threads/HelloWorld.o"
+	@echo "... Threads/HelloWorld.i"
+	@echo "... Threads/HelloWorld.s"
 	@echo "... helloWorld.o"
 	@echo "... helloWorld.i"
 	@echo "... helloWorld.s"
