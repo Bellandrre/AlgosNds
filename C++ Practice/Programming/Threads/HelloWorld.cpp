@@ -5,12 +5,13 @@
 #include<stdio.h>
 #include<iostream>
 #include<pthread.h>
+#include<unistd.h>
 #include<errno.h>
 using namespace std;
 static void * thread_fn_callback(void *arg){
     char *input = (char *)arg;
     while(1){
-        cout << "Input String = " << input;
+        printf("input string = %s\n", input);
         sleep(1);
     }
 }
