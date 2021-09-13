@@ -17,11 +17,43 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/kkolathu/Documents/GitHub/AlgosNds/C++\ Practice/Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="rebuild_cache">
+			<Target title="DataStructures">
+				<Option output="/Users/kkolathu/Documents/GitHub/AlgosNds/C++ Practice/Programming/cmake-build-debug/DataStructures" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/kkolathu/Documents/GitHub/AlgosNds/C++ Practice/Programming/cmake-build-debug"/>
-				<Option type="4"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/kkolathu/Documents/GitHub/AlgosNds/C++\ Practice/Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/kkolathu/Documents/GitHub/AlgosNds/C++\ Practice/Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 DataStructures"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/kkolathu/Documents/GitHub/AlgosNds/C++\ Practice/Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/kkolathu/Documents/GitHub/AlgosNds/C++\ Practice/Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/kkolathu/Documents/GitHub/AlgosNds/C++\ Practice/Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="DataStructures/fast">
+				<Option output="/Users/kkolathu/Documents/GitHub/AlgosNds/C++ Practice/Programming/cmake-build-debug/DataStructures" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/kkolathu/Documents/GitHub/AlgosNds/C++ Practice/Programming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/kkolathu/Documents/GitHub/AlgosNds/C++\ Practice/Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 DataStructures/fast"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/kkolathu/Documents/GitHub/AlgosNds/C++\ Practice/Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/Users/kkolathu/Documents/GitHub/AlgosNds/C++\ Practice/Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/kkolathu/Documents/GitHub/AlgosNds/C++\ Practice/Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -74,6 +106,48 @@
 				<Option type="4"/>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j4 -f &quot;/Users/kkolathu/Documents/GitHub/AlgosNds/C++\ Practice/Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/kkolathu/Documents/GitHub/AlgosNds/C++\ Practice/Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/kkolathu/Documents/GitHub/AlgosNds/C++\ Practice/Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/kkolathu/Documents/GitHub/AlgosNds/C++\ Practice/Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ThreeSum">
+				<Option output="/Users/kkolathu/Documents/GitHub/AlgosNds/C++ Practice/Programming/cmake-build-debug/ThreeSum" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/kkolathu/Documents/GitHub/AlgosNds/C++ Practice/Programming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/kkolathu/Documents/GitHub/AlgosNds/C++\ Practice/Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 ThreeSum"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/kkolathu/Documents/GitHub/AlgosNds/C++\ Practice/Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/kkolathu/Documents/GitHub/AlgosNds/C++\ Practice/Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/kkolathu/Documents/GitHub/AlgosNds/C++\ Practice/Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ThreeSum/fast">
+				<Option output="/Users/kkolathu/Documents/GitHub/AlgosNds/C++ Practice/Programming/cmake-build-debug/ThreeSum" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/kkolathu/Documents/GitHub/AlgosNds/C++ Practice/Programming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/kkolathu/Documents/GitHub/AlgosNds/C++\ Practice/Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 ThreeSum/fast"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/kkolathu/Documents/GitHub/AlgosNds/C++\ Practice/Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/Users/kkolathu/Documents/GitHub/AlgosNds/C++\ Practice/Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/kkolathu/Documents/GitHub/AlgosNds/C++\ Practice/Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -247,29 +321,18 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/kkolathu/Documents/GitHub/AlgosNds/C++\ Practice/Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="ThreeSum">
-				<Option output="/Users/kkolathu/Documents/GitHub/AlgosNds/C++ Practice/Programming/cmake-build-debug/ThreeSum" prefix_auto="0" extension_auto="0"/>
+			<Target title="rebuild_cache">
 				<Option working_dir="/Users/kkolathu/Documents/GitHub/AlgosNds/C++ Practice/Programming/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
+				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/kkolathu/Documents/GitHub/AlgosNds/C++\ Practice/Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 ThreeSum"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/kkolathu/Documents/GitHub/AlgosNds/C++\ Practice/Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/kkolathu/Documents/GitHub/AlgosNds/C++\ Practice/Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/Users/kkolathu/Documents/GitHub/AlgosNds/C++\ Practice/Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/kkolathu/Documents/GitHub/AlgosNds/C++\ Practice/Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="ThreeSum/fast">
-				<Option output="/Users/kkolathu/Documents/GitHub/AlgosNds/C++ Practice/Programming/cmake-build-debug/ThreeSum" prefix_auto="0" extension_auto="0"/>
+			<Target title="GroupAnagrams">
+				<Option output="/Users/kkolathu/Documents/GitHub/AlgosNds/C++ Practice/Programming/cmake-build-debug/GroupAnagrams" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/kkolathu/Documents/GitHub/AlgosNds/C++ Practice/Programming/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -283,14 +346,14 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/kkolathu/Documents/GitHub/AlgosNds/C++\ Practice/Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 ThreeSum/fast"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/kkolathu/Documents/GitHub/AlgosNds/C++\ Practice/Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 GroupAnagrams"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/kkolathu/Documents/GitHub/AlgosNds/C++\ Practice/Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/Users/kkolathu/Documents/GitHub/AlgosNds/C++\ Practice/Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/kkolathu/Documents/GitHub/AlgosNds/C++\ Practice/Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="DataStructures">
-				<Option output="/Users/kkolathu/Documents/GitHub/AlgosNds/C++ Practice/Programming/cmake-build-debug/DataStructures" prefix_auto="0" extension_auto="0"/>
+			<Target title="GroupAnagrams/fast">
+				<Option output="/Users/kkolathu/Documents/GitHub/AlgosNds/C++ Practice/Programming/cmake-build-debug/GroupAnagrams" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/kkolathu/Documents/GitHub/AlgosNds/C++ Practice/Programming/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -304,28 +367,7 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/kkolathu/Documents/GitHub/AlgosNds/C++\ Practice/Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 DataStructures"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/kkolathu/Documents/GitHub/AlgosNds/C++\ Practice/Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/kkolathu/Documents/GitHub/AlgosNds/C++\ Practice/Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/kkolathu/Documents/GitHub/AlgosNds/C++\ Practice/Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="DataStructures/fast">
-				<Option output="/Users/kkolathu/Documents/GitHub/AlgosNds/C++ Practice/Programming/cmake-build-debug/DataStructures" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/kkolathu/Documents/GitHub/AlgosNds/C++ Practice/Programming/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/kkolathu/Documents/GitHub/AlgosNds/C++\ Practice/Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 DataStructures/fast"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/kkolathu/Documents/GitHub/AlgosNds/C++\ Practice/Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 GroupAnagrams/fast"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/kkolathu/Documents/GitHub/AlgosNds/C++\ Practice/Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/Users/kkolathu/Documents/GitHub/AlgosNds/C++\ Practice/Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/kkolathu/Documents/GitHub/AlgosNds/C++\ Practice/Programming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -424,6 +466,9 @@
 		</Unit>
 		<Unit filename="/Users/kkolathu/Documents/GitHub/AlgosNds/C++ Practice/Programming/ProgrammingProblems/FourSum.cpp">
 			<Option target="FourSum"/>
+		</Unit>
+		<Unit filename="/Users/kkolathu/Documents/GitHub/AlgosNds/C++ Practice/Programming/ProgrammingProblems/GroupAnagrams.cpp">
+			<Option target="GroupAnagrams"/>
 		</Unit>
 		<Unit filename="/Users/kkolathu/Documents/GitHub/AlgosNds/C++ Practice/Programming/ProgrammingProblems/ThreeSum.cpp">
 			<Option target="ThreeSum"/>

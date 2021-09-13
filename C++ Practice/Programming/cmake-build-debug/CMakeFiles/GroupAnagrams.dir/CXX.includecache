@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/kkolathu/Documents/GitHub/AlgosNds/C++ Practice/Programming/ProgrammingProblems/GroupAnagrams.cpp
+iostream
+-
+unordered_map
+-
+vector
+-
+

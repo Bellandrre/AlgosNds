@@ -65,16 +65,6 @@ CMAKE_BINARY_DIR = "/Users/kkolathu/Documents/GitHub/AlgosNds/C++ Practice/Progr
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -84,6 +74,16 @@ edit_cache:
 # Special rule for the target edit_cache
 edit_cache/fast: edit_cache
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -117,6 +117,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named DataStructures
+
+# Build rule for target.
+DataStructures: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 DataStructures
+.PHONY : DataStructures
+
+# fast build rule for target.
+DataStructures/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataStructures.dir/build.make CMakeFiles/DataStructures.dir/build
+.PHONY : DataStructures/fast
+
+#=============================================================================
 # Target rules for targets named FourSum
 
 # Build rule for target.
@@ -128,6 +141,19 @@ FourSum: cmake_check_build_system
 FourSum/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourSum.dir/build.make CMakeFiles/FourSum.dir/build
 .PHONY : FourSum/fast
+
+#=============================================================================
+# Target rules for targets named ThreeSum
+
+# Build rule for target.
+ThreeSum: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ThreeSum
+.PHONY : ThreeSum
+
+# fast build rule for target.
+ThreeSum/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThreeSum.dir/build.make CMakeFiles/ThreeSum.dir/build
+.PHONY : ThreeSum/fast
 
 #=============================================================================
 # Target rules for targets named HelloWorld
@@ -182,30 +208,17 @@ test/fast:
 .PHONY : test/fast
 
 #=============================================================================
-# Target rules for targets named ThreeSum
+# Target rules for targets named GroupAnagrams
 
 # Build rule for target.
-ThreeSum: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ThreeSum
-.PHONY : ThreeSum
+GroupAnagrams: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 GroupAnagrams
+.PHONY : GroupAnagrams
 
 # fast build rule for target.
-ThreeSum/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThreeSum.dir/build.make CMakeFiles/ThreeSum.dir/build
-.PHONY : ThreeSum/fast
-
-#=============================================================================
-# Target rules for targets named DataStructures
-
-# Build rule for target.
-DataStructures: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 DataStructures
-.PHONY : DataStructures
-
-# fast build rule for target.
-DataStructures/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataStructures.dir/build.make CMakeFiles/DataStructures.dir/build
-.PHONY : DataStructures/fast
+GroupAnagrams/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GroupAnagrams.dir/build.make CMakeFiles/GroupAnagrams.dir/build
+.PHONY : GroupAnagrams/fast
 
 #=============================================================================
 # Target rules for targets named kSum
@@ -304,6 +317,30 @@ ProgrammingProblems/FourSum.s: ProgrammingProblems/FourSum.cpp.s
 ProgrammingProblems/FourSum.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FourSum.dir/build.make CMakeFiles/FourSum.dir/ProgrammingProblems/FourSum.cpp.s
 .PHONY : ProgrammingProblems/FourSum.cpp.s
+
+ProgrammingProblems/GroupAnagrams.o: ProgrammingProblems/GroupAnagrams.cpp.o
+.PHONY : ProgrammingProblems/GroupAnagrams.o
+
+# target to build an object file
+ProgrammingProblems/GroupAnagrams.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GroupAnagrams.dir/build.make CMakeFiles/GroupAnagrams.dir/ProgrammingProblems/GroupAnagrams.cpp.o
+.PHONY : ProgrammingProblems/GroupAnagrams.cpp.o
+
+ProgrammingProblems/GroupAnagrams.i: ProgrammingProblems/GroupAnagrams.cpp.i
+.PHONY : ProgrammingProblems/GroupAnagrams.i
+
+# target to preprocess a source file
+ProgrammingProblems/GroupAnagrams.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GroupAnagrams.dir/build.make CMakeFiles/GroupAnagrams.dir/ProgrammingProblems/GroupAnagrams.cpp.i
+.PHONY : ProgrammingProblems/GroupAnagrams.cpp.i
+
+ProgrammingProblems/GroupAnagrams.s: ProgrammingProblems/GroupAnagrams.cpp.s
+.PHONY : ProgrammingProblems/GroupAnagrams.s
+
+# target to generate assembly for a file
+ProgrammingProblems/GroupAnagrams.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GroupAnagrams.dir/build.make CMakeFiles/GroupAnagrams.dir/ProgrammingProblems/GroupAnagrams.cpp.s
+.PHONY : ProgrammingProblems/GroupAnagrams.cpp.s
 
 ProgrammingProblems/ThreeSum.o: ProgrammingProblems/ThreeSum.cpp.o
 .PHONY : ProgrammingProblems/ThreeSum.o
@@ -459,6 +496,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... DataStructures"
 	@echo "... FourSum"
+	@echo "... GroupAnagrams"
 	@echo "... HelloWorld"
 	@echo "... Programming"
 	@echo "... Structures"
@@ -475,6 +513,9 @@ help:
 	@echo "... ProgrammingProblems/FourSum.o"
 	@echo "... ProgrammingProblems/FourSum.i"
 	@echo "... ProgrammingProblems/FourSum.s"
+	@echo "... ProgrammingProblems/GroupAnagrams.o"
+	@echo "... ProgrammingProblems/GroupAnagrams.i"
+	@echo "... ProgrammingProblems/GroupAnagrams.s"
 	@echo "... ProgrammingProblems/ThreeSum.o"
 	@echo "... ProgrammingProblems/ThreeSum.i"
 	@echo "... ProgrammingProblems/ThreeSum.s"
