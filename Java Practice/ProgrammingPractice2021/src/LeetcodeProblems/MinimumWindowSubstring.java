@@ -81,7 +81,7 @@ public class MinimumWindowSubstring {
     // Helper function to insert a character in the map
     private void addCharacterToHashtableMapping(Map<Character, Integer> map, Character c) {
         int occurrences = map.getOrDefault(c, 0);
-        map.put(c, occurrences + 1);
+        map.put(c, occurrences + 1); 
     }
 
 }
