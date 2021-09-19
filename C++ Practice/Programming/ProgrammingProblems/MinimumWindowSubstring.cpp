@@ -6,8 +6,8 @@
 using namespace std;
 
 string minimumWindowSubstring(string inputString, string pattern){
-    int givenString[256];
-    int patternString[256];
+    int givenString[256] = {0};
+    int patternString[256] = {0};
 
     // if the pattern itself is longer than the given string
     if(pattern.size() > inputString.size()) return "";
@@ -31,7 +31,7 @@ string minimumWindowSubstring(string inputString, string pattern){
                    || patternString[inputString[start]] == 0){
                 if(givenString[inputString[start]] > patternString[inputString[start]])
                     givenString[inputString[start]]--;
-                
+
                 start++;
             }
             int current_window_len = i - start + 1;
