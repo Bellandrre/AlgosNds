@@ -143,6 +143,19 @@ FourSum/fast:
 .PHONY : FourSum/fast
 
 #=============================================================================
+# Target rules for targets named MinimumWindowSubstring
+
+# Build rule for target.
+MinimumWindowSubstring: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MinimumWindowSubstring
+.PHONY : MinimumWindowSubstring
+
+# fast build rule for target.
+MinimumWindowSubstring/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MinimumWindowSubstring.dir/build.make CMakeFiles/MinimumWindowSubstring.dir/build
+.PHONY : MinimumWindowSubstring/fast
+
+#=============================================================================
 # Target rules for targets named ThreeSum
 
 # Build rule for target.
@@ -342,6 +355,30 @@ ProgrammingProblems/GroupAnagrams.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GroupAnagrams.dir/build.make CMakeFiles/GroupAnagrams.dir/ProgrammingProblems/GroupAnagrams.cpp.s
 .PHONY : ProgrammingProblems/GroupAnagrams.cpp.s
 
+ProgrammingProblems/MinimumWindowSubstring.o: ProgrammingProblems/MinimumWindowSubstring.cpp.o
+.PHONY : ProgrammingProblems/MinimumWindowSubstring.o
+
+# target to build an object file
+ProgrammingProblems/MinimumWindowSubstring.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MinimumWindowSubstring.dir/build.make CMakeFiles/MinimumWindowSubstring.dir/ProgrammingProblems/MinimumWindowSubstring.cpp.o
+.PHONY : ProgrammingProblems/MinimumWindowSubstring.cpp.o
+
+ProgrammingProblems/MinimumWindowSubstring.i: ProgrammingProblems/MinimumWindowSubstring.cpp.i
+.PHONY : ProgrammingProblems/MinimumWindowSubstring.i
+
+# target to preprocess a source file
+ProgrammingProblems/MinimumWindowSubstring.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MinimumWindowSubstring.dir/build.make CMakeFiles/MinimumWindowSubstring.dir/ProgrammingProblems/MinimumWindowSubstring.cpp.i
+.PHONY : ProgrammingProblems/MinimumWindowSubstring.cpp.i
+
+ProgrammingProblems/MinimumWindowSubstring.s: ProgrammingProblems/MinimumWindowSubstring.cpp.s
+.PHONY : ProgrammingProblems/MinimumWindowSubstring.s
+
+# target to generate assembly for a file
+ProgrammingProblems/MinimumWindowSubstring.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MinimumWindowSubstring.dir/build.make CMakeFiles/MinimumWindowSubstring.dir/ProgrammingProblems/MinimumWindowSubstring.cpp.s
+.PHONY : ProgrammingProblems/MinimumWindowSubstring.cpp.s
+
 ProgrammingProblems/ThreeSum.o: ProgrammingProblems/ThreeSum.cpp.o
 .PHONY : ProgrammingProblems/ThreeSum.o
 
@@ -498,6 +535,7 @@ help:
 	@echo "... FourSum"
 	@echo "... GroupAnagrams"
 	@echo "... HelloWorld"
+	@echo "... MinimumWindowSubstring"
 	@echo "... Programming"
 	@echo "... Structures"
 	@echo "... ThreeSum"
@@ -516,6 +554,9 @@ help:
 	@echo "... ProgrammingProblems/GroupAnagrams.o"
 	@echo "... ProgrammingProblems/GroupAnagrams.i"
 	@echo "... ProgrammingProblems/GroupAnagrams.s"
+	@echo "... ProgrammingProblems/MinimumWindowSubstring.o"
+	@echo "... ProgrammingProblems/MinimumWindowSubstring.i"
+	@echo "... ProgrammingProblems/MinimumWindowSubstring.s"
 	@echo "... ProgrammingProblems/ThreeSum.o"
 	@echo "... ProgrammingProblems/ThreeSum.i"
 	@echo "... ProgrammingProblems/ThreeSum.s"
