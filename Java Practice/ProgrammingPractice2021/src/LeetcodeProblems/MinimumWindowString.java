@@ -19,7 +19,7 @@ public class MinimumWindowString {
         for(int i = 0 ; i < len2 ; i++)
             toMatch[t.charAt(i)]++;
 
-        int start = 0, min_len = Integer.MAX_VALUE, start_index = 1;
+        int start = 0, min_len = Integer.MAX_VALUE, start_index = -1;
 
         for(int j = 0 ; j < len1; j++) {
             givenString[searchString.charAt(j)]++;
@@ -58,8 +58,8 @@ public class MinimumWindowString {
     }
 
     public static void main(String[] args) {
-        String givenString = "ADOBECODEBANC";
-        String t = "ABC";
+        String givenString = "A";
+        String t = "B";
         System.out.println(minWindow(givenString,t));
     }
 }
