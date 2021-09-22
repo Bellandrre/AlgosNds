@@ -8,7 +8,7 @@ using namespace std;
 string minimumWindowSubstring(string inputString, string pattern){
     int givenString[256] = {0};
     int patternString[256] = {0};
- 
+
     // if the pattern itself is longer than the given string
     if(pattern.size() > inputString.size()) return "";
     // initialize pattern string array with occurrences
