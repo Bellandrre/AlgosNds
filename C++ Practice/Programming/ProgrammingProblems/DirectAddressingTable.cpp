@@ -2,10 +2,10 @@
 // Created by Karthik Kolathumani on 9/23/21.
 //
 
-#inlcude<iostream>
+#include<iostream>
 using namespace std;
-static int[] table;
-static int[] stack;
+static int table[10000];
+static int stack[10000];
 static int head;
 
 static void insert(int value){
@@ -13,7 +13,7 @@ static void insert(int value){
     stack[head] = value;
 }
 
-static boolean search(int value){
+static bool search(int value){
     if(head <= -1) return false;
     else{
         int stackIndex = table[value];
@@ -44,13 +44,30 @@ static boolean search(int value){
  * table[<>, 0, <> , <>, <>, <>, 2, 3, <>, 1]
  *
  */
-static void delete(int value){
+static void delete_1(int value){
     if(search(value) == true){
         stack[table[value]] = stack[head];
         table[stack[head]] = table[value];
-        stack[head] = null;
-        table[value] = null;
+        stack[head] = -2;
+        table[value] = -2;
         head--;
     }
+}
+
+int main(){
+    //1, 22, 6 , 7, 9
+    insert(1);
+    cout << search(1) << endl;
+    cout << search(10) << endl;
+    insert(22);
+    cout << search(22) << endl;
+    insert(6);
+    insert(7);
+    delete_1(22);
+    insert(10);
+    cout << search(22) << endl;
+    cout << search(1) << endl;
+    cout << search(10) << endl;
+    return 0;
 }
 

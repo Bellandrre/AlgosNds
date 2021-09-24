@@ -247,6 +247,19 @@ kSum/fast:
 .PHONY : kSum/fast
 
 #=============================================================================
+# Target rules for targets named DirectAddressingTable
+
+# Build rule for target.
+DirectAddressingTable: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 DirectAddressingTable
+.PHONY : DirectAddressingTable
+
+# fast build rule for target.
+DirectAddressingTable/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DirectAddressingTable.dir/build.make CMakeFiles/DirectAddressingTable.dir/build
+.PHONY : DirectAddressingTable/fast
+
+#=============================================================================
 # Target rules for targets named Programming
 
 # Build rule for target.
@@ -306,6 +319,30 @@ DataStructures/arrays.s: DataStructures/arrays.cpp.s
 DataStructures/arrays.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataStructures.dir/build.make CMakeFiles/DataStructures.dir/DataStructures/arrays.cpp.s
 .PHONY : DataStructures/arrays.cpp.s
+
+ProgrammingProblems/DirectAddressingTable.o: ProgrammingProblems/DirectAddressingTable.cpp.o
+.PHONY : ProgrammingProblems/DirectAddressingTable.o
+
+# target to build an object file
+ProgrammingProblems/DirectAddressingTable.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DirectAddressingTable.dir/build.make CMakeFiles/DirectAddressingTable.dir/ProgrammingProblems/DirectAddressingTable.cpp.o
+.PHONY : ProgrammingProblems/DirectAddressingTable.cpp.o
+
+ProgrammingProblems/DirectAddressingTable.i: ProgrammingProblems/DirectAddressingTable.cpp.i
+.PHONY : ProgrammingProblems/DirectAddressingTable.i
+
+# target to preprocess a source file
+ProgrammingProblems/DirectAddressingTable.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DirectAddressingTable.dir/build.make CMakeFiles/DirectAddressingTable.dir/ProgrammingProblems/DirectAddressingTable.cpp.i
+.PHONY : ProgrammingProblems/DirectAddressingTable.cpp.i
+
+ProgrammingProblems/DirectAddressingTable.s: ProgrammingProblems/DirectAddressingTable.cpp.s
+.PHONY : ProgrammingProblems/DirectAddressingTable.s
+
+# target to generate assembly for a file
+ProgrammingProblems/DirectAddressingTable.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DirectAddressingTable.dir/build.make CMakeFiles/DirectAddressingTable.dir/ProgrammingProblems/DirectAddressingTable.cpp.s
+.PHONY : ProgrammingProblems/DirectAddressingTable.cpp.s
 
 ProgrammingProblems/FourSum.o: ProgrammingProblems/FourSum.cpp.o
 .PHONY : ProgrammingProblems/FourSum.o
@@ -532,6 +569,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... DataStructures"
+	@echo "... DirectAddressingTable"
 	@echo "... FourSum"
 	@echo "... GroupAnagrams"
 	@echo "... HelloWorld"
@@ -548,6 +586,9 @@ help:
 	@echo "... DataStructures/arrays.o"
 	@echo "... DataStructures/arrays.i"
 	@echo "... DataStructures/arrays.s"
+	@echo "... ProgrammingProblems/DirectAddressingTable.o"
+	@echo "... ProgrammingProblems/DirectAddressingTable.i"
+	@echo "... ProgrammingProblems/DirectAddressingTable.s"
 	@echo "... ProgrammingProblems/FourSum.o"
 	@echo "... ProgrammingProblems/FourSum.i"
 	@echo "... ProgrammingProblems/FourSum.s"
