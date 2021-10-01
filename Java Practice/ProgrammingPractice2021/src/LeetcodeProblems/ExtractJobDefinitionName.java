@@ -8,4 +8,4 @@ public class ExtractJobDefinitionName {
         System.out.println(input.substring(input.lastIndexOf(';')+1));
     }
 }
- 
+  
