@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/LeetcodeProblems/ThreeSumClosest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LeetcodeProblems/ThreeSumClosest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LeetcodeProblems/ValidPalindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LeetcodeProblems/ValidPalindrome.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -62,11 +62,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LeetcodeProblems/ThreeSumClosest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+            <state relative-caret-position="187">
+              <caret line="16" column="58" lean-forward="true" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -128,11 +128,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/LeetcodeProblems/ValidPalindrome.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="300">
+              <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -161,11 +161,11 @@
         <option value="$PROJECT_DIR$/src/LeetcodeProblems/GroupAnagrams.java" />
         <option value="$PROJECT_DIR$/src/LeetcodeProblems/MinimumWindowSubstring.java" />
         <option value="$PROJECT_DIR$/src/LeetcodeProblems/MinimumWindowString.java" />
-        <option value="$PROJECT_DIR$/src/LeetcodeProblems/ValidPalindrome.java" />
         <option value="$PROJECT_DIR$/src/LeetcodeProblems/MajorityElementVotingAlgo.java" />
         <option value="$PROJECT_DIR$/src/LeetcodeProblems/ExtractJobDefinitionName.java" />
         <option value="$PROJECT_DIR$/src/LeetcodeProblems/FourSum.java" />
         <option value="$PROJECT_DIR$/src/LeetcodeProblems/ThreeSumClosest.java" />
+        <option value="$PROJECT_DIR$/src/LeetcodeProblems/ValidPalindrome.java" />
       </list>
     </option>
   </component>
@@ -625,13 +625,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LeetcodeProblems/ValidPalindrome.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LeetcodeProblems/MinimumWindowString.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -665,8 +658,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LeetcodeProblems/ThreeSumClosest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+        <state relative-caret-position="187">
+          <caret line="16" column="58" lean-forward="true" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LeetcodeProblems/ValidPalindrome.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
         </state>
       </provider>
     </entry>
