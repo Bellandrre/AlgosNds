@@ -23,7 +23,7 @@ public class FourSum {
             }
         }
         return resultList;
-    } 
+    }
 
     private static List<List<Integer>> computerThreeSum(int nums[], int startIndex, int target){
         List<List<Integer>> resultList = new ArrayList<>();

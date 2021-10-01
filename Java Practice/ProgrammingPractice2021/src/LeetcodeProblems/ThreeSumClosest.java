@@ -19,7 +19,7 @@ public class ThreeSumClosest {
                     if(diff < minDiff){
                         minDiff = diff;
                         closestSum = currSum;
-                    }
+                    } 
                     if(currSum < target){
                         int currStart = start;
                         while(nums[currStart] == nums[start] && start < end){
