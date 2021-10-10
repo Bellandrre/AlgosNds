@@ -14,7 +14,7 @@ public class MinimumWindowSubstring {
 
         int totalCharFrequenciesToMatch = requiredCharacters.size();
         int charFrequenciesInWindowThatMatch = 0;
- 
+
         // This will store the minimum length of valid substring
         int minWindowLengthSeenSoFar = Integer.MAX_VALUE;
 
