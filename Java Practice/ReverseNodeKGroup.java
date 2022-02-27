@@ -4,7 +4,9 @@
  * @author Karthik Kolathumani
  * Recursive approach beats 100%
  */
-class Solution {
+
+class Solution_2 {
+    /*
     public ListNode reverseKGroup(ListNode head, int k) {
         ListNode curr = head;
         int count = 0;
@@ -26,4 +28,6 @@ class Solution {
         }
         return head;
     }
+    */
+
 }

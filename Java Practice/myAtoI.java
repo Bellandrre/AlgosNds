@@ -1,4 +1,4 @@
-public class StringToInteger {
+class StringToInteger {
 
 
     public static int myAtoi(String str){

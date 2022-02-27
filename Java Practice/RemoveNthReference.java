@@ -7,6 +7,7 @@
  * }
  */
 class RemoveNthReference {
+    /*
     public ListNode removeNthFromEnd(ListNode head, int n) {
         ListNode dummy = new ListNode(0);
         dummy.next = head;
@@ -27,4 +28,5 @@ class RemoveNthReference {
         slow.next = slow.next.next;
         return dummy.next;
     }
+     */
 }

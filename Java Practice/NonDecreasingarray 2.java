@@ -1,5 +1,5 @@
 
-public class NonDecreasingArray {
+class NonDecreasingArray {
 	public static void main(String[] args) {
 		int input[] = {3,4,2,3}; //4,2,3
 		System.out.println(findCanbeMadeDecreasing(input));

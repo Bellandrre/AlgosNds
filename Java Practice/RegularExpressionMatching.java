@@ -4,7 +4,7 @@
  * @author Karthik Kolathumani
  */
 import java.util.regex.*;
-class Solution {
+class Solution_1 {
 
     // Simple approach I prefer
     // downsides - slow (not sure about the time complexity of this one. Need to know the matcher method computes regex)
