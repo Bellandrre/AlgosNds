@@ -33,27 +33,6 @@ public class MinMaxStack {
     public int pop() {
         if(!stack.isEmpty()){
             Element poppedItem = stack.pop();
-
-/*            if(!stack.isEmpty()){
-
-                Element peekedElement = stack.pop();
-
-                // Update current Minimum
-                if(poppedItem.currentMin == peekedElement.currentMin){
-                    if(!stack.isEmpty()){
-                        peekedElement.currentMin = stack.peek().currentMin;
-                    }
-                }
-
-                // Update current Maximum
-                if(poppedItem.currentMax == peekedElement.currentMax){
-                    if(!stack.isEmpty()){
-                        peekedElement.currentMax = stack.peek().currentMax;
-                    }
-                }
-                stack.push(peekedElement);
-            }*/
-
             return poppedItem.value;
         }
         return -1;
