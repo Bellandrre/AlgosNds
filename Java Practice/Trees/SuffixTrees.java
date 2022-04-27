@@ -1,6 +1,7 @@
 package Trees;
 import java.util.Map;
 import java.util.HashMap;
+import java.util.PriorityQueue;
 
 public class SuffixTrees {
     static class TrieNode {
