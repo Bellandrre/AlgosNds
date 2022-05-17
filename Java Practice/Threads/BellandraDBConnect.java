@@ -20,8 +20,7 @@ public class BellandraDBConnect {
         try {
             lock.lock();
             Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection(connectionString, "bellandra",
-                    new String(Base64.getDecoder().decode("QmVlZnlPbmUxOTkyIQ==".getBytes()))); // LOL :P take the pain to figure it out!
+            con = DriverManager.getConnection(connectionString, "bellandra", System.getenv("AZUREPASS")); // LOL :P take the pain to figure it out!
             stmt = con.createStatement();
         }catch (Exception ex){
             ex.printStackTrace();
