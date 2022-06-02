@@ -39,7 +39,7 @@ public class FindPrimesWorker implements Callable<List<Integer>>{
         if(number == 2) return true;
         if(number % 2 == 0) return false;
 
-        for(int i = 3; i < Math.sqrt(number); i++){
+        for(int i = 3; i <= Math.sqrt(number); i++){
             if(number % i == 0) return false;
         }
         return true;
