@@ -44,8 +44,8 @@ public class CoinChange {
     }
 
     public static void main(String[] args) {
-        int coins[] = {1,3,4,5};
-        int amount = 7;
+        int coins[] = {2, 1};
+        int amount = 3;
         System.out.println(coinChangeDp(amount, coins));
     }
 
