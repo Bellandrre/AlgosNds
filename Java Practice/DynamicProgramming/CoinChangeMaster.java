@@ -10,7 +10,7 @@ public class CoinChangeMaster {
 
     public static void main(String[] args) throws Exception {
 
-        int coins[] = {1,3,4,5};
+        int coins[] = {1, 10, 5};
         int amount = 7;
         int  dp[] = new int[8];
         Arrays.fill(dp, Integer.MAX_VALUE);
@@ -26,7 +26,9 @@ public class CoinChangeMaster {
         service.submit(worker_1);
         service.submit(worker_2);
 
-        System.out.println(dp[amount]);
+        for(Integer i : dp){
+            System.out.println(i);
+        }
 
         service.shutdown();
     }
