@@ -105,8 +105,4 @@ public class Graph<T> {
             return true;
         }
     }
-
-    public void traverseGraph(){
-
-    }
 }
