@@ -41,15 +41,14 @@ public class BreadthFirstSearchh {
     }
 
     public static void main(String[] args) {
-        BreadthFirstSearchh g = new BreadthFirstSearchh(4);
+        BreadthFirstSearchh g = new BreadthFirstSearchh(6);
+        g.addEdge(5, 4);
         g.addEdge(0, 1);
         g.addEdge(0, 2);
-        g.addEdge(1, 2);
-        g.addEdge(2, 0);
-        g.addEdge(2, 3);
-        g.addEdge(3, 3);
+        g.addEdge(0, 3);
+        g.addEdge(2, 4);
 
-        g.doBFS(2);
+        g.doBFS(0);
     }
 
 }
