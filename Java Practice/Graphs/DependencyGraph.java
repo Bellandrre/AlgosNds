@@ -3,22 +3,21 @@ import java.util.*;
 
 public class DependencyGraph {
 
-    HashSet<Integer> seen = new HashSet<>();
-    HashSet<Integer> recursionStack = new HashSet<>();
-
-    public boolean isCyclic(int[][] prerequisites){
-        if(prerequisites.length == 0)
-            return false;
-        seen.add(prerequisites[0][0]);
-        recursionStack.add(prerequisites[0][0]);
-
-        return true; // doDFSHelper();
+    class Gnode{
+        public Integer inDegrees = 0;
+        public List<Integer> outNodes = new LinkedList<>();
     }
 
-    public boolean doDFSHelper(int start, int[][] prerequisites){
+    public boolean canFinish(int numCourses, int[][] prerequisites){
+        if(prerequisites.length == 0){
+            return true;
+        }
 
-        int currentNode = prerequisites[start][0];
+        HashMap<Integer, Gnode> graph = new HashMap<>();
+
+        for(int[] relation : prerequisites){
+            //Gnode prevCourse = this.get
+        }
         return true;
     }
-
 }
