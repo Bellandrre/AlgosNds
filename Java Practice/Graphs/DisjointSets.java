@@ -64,8 +64,6 @@ public class DisjointSets {
     * seen 0, 1, 2, 4, 5, 6, 7
     * ListOfSets [{0, 1, 2, 3}, {4,8}, {5, 6, 7}]
     * */
-
-
     public static boolean checkIfNodesConnected(Node a, Node b){
         for(HashSet set : listOfSets){
             if(set.contains(a) && set.contains(b)){
@@ -121,6 +119,7 @@ public class DisjointSets {
         constructSets();
 
         System.out.println(checkIfNodesConnected(six, nine));
+
 
     }
 }
