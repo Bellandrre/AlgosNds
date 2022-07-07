@@ -1,60 +1,57 @@
 package Sorting;
+
 public class MergeSort {
 
-    static int inversionCount = 0;
-    public void merge(int arr[], int leftIndex, int middleIndex, int rightIndex){
+    public  void merge(int arr[], int low, int mid, int high){
+        int leftTempArraySize  = mid - low + 1;
+        int rightTempArraySize = high - mid;
 
-        int leftTempArraySize  = middleIndex - leftIndex + 1;
-        int rightTempArraySize = rightIndex - middleIndex;
+        int arr_temp_left[]  = new int[mid - low + 1];
+        int arr_temp_right[] = new int[high - mid];
 
-        int[] leftTempArray  = new int[leftTempArraySize];
-        int[] rightTempArray = new int[rightTempArraySize];
-
-
-        for(int i = 0; i < leftTempArraySize; i++){
-            leftTempArray[i] = arr[leftIndex + i];
+        for(int i = 0 ; i < leftTempArraySize; i++){
+            arr_temp_left[i] = arr[low + i];
         }
 
-        for(int j = 0 ; j < rightTempArraySize; j++){
-            rightTempArray[j] = arr[middleIndex + 1 + j];
+        for(int j = 0; j < rightTempArraySize; j++){
+            arr_temp_right[j] = arr[mid + 1 + j];
         }
 
-        int left = 0, right = 0;
-        int k = leftIndex;
-
-        while(left < leftTempArraySize && right < rightTempArraySize){
-            if(leftTempArray[left] <= rightTempArray[right]){
-                arr[k++] = leftTempArray[left++];
+        int i = 0;
+        int j = 0;
+        int k = low;
+        while(i < leftTempArraySize && j < rightTempArraySize){
+            if(arr_temp_left[i] <= arr_temp_right[j]){
+                arr[k++] = arr_temp_left[i++];
             }else{
-                arr[k++] = rightTempArray[right++];
+                arr[k++] = arr_temp_right[j++];
             }
         }
 
-        while(left < leftTempArraySize){
-            arr[k++] = leftTempArray[left++];
+        while(i < leftTempArraySize){
+            arr[k++] = arr_temp_left[i++];
         }
-
-        while(right < rightTempArraySize){
-            arr[k++] = rightTempArray[right++];
+        while(j < rightTempArraySize){
+            arr[k++] = arr_temp_right[j++];
         }
     }
 
-    public void sort(int arr[], int left, int right){
-        if(left < right){
-            int mid = (left + right)/2;
-
-            sort(arr, left, mid);
-            sort(arr,mid + 1, right);
-            merge(arr, left, mid, right);
+    public  void sort(int arr[], int low, int high){
+        if(low < high){
+            int mid = (low + high) / 2;
+            sort(arr, low, mid);
+            sort(arr, mid + 1, high);
+            merge(arr, low, mid, high);
         }
     }
 
     public static void main(String[] args) {
-        int arr[] = {2, 3, 3, 1, 9, 5, 6};
+        int arr[] = {8, 5, 2, 9, 5, 6, 3};
+
         new MergeSort().sort(arr, 0, arr.length - 1);
-        System.out.println(inversionCount);
+
         for(Integer i : arr){
-            System.out.print(i+" ");
+            System.out.print(i + " ");
         }
     }
 }
